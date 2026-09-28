@@ -38,3 +38,7 @@ function processPayment(payment) {
 
     return payment.amount;
 }
+
+function getFirstUser(users) {
+    return users[0].name;
+}
