@@ -1,6 +1,17 @@
 function getUser(userId) {
-    fetch("/api/users/" + userId)
-        .then(response => response.json())
+    if (!userId || !Number.isInteger(Number(userId))) {
+        console.error("Invalid user ID:", userId);
+        return;
+    }
+
+    fetch("/api/users/" + encodeURIComponent(userId))
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch user: ${response.status}`);
+            }
+
+            return response.json();
+        })
         .then(data => {
             console.log("User:", data);
         })
