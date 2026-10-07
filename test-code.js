@@ -1,3 +1,4 @@
+// second code
 function getUser() {
     fetch("/api/user")
         .then(response => response.json())
