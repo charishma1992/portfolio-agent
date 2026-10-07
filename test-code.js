@@ -1,6 +1,9 @@
-function getUser(userId) {
-    return fetch("/api/users/" + userId)
-        .then(response => response.json());
+function getUser() {
+    fetch("/api/user")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
 }
 // AI review webhook test
 // function getUser(userId) {
