@@ -1,3 +1,4 @@
+// added code
 function calculateAverage(numbers) {
     return numbers.reduce((a, b) => a + b) / numbers.length;
 }
