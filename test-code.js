@@ -1,4 +1,4 @@
-// added code
+// added code1
 function calculateAverage(numbers) {
     return numbers.reduce((a, b) => a + b) / numbers.length;
 }
