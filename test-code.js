@@ -1,30 +1,22 @@
-const users = [];
 
-function addUser(name, age) {
-    // Issue 1: Missing input validation
-    users.push({ name, age });
+function calculateAverage(numbers) {
+    // BUG-002: Potential division by zero when numbers is empty
+    return numbers.reduce((a, b) => a + b) / numbers.length;
 }
 
-function getUser(id) {
-    // Issue 2: Loose equality
-    return users.find(user => user.id == id);
-}
+function getUser(user) {
+    console.log("User details:", user);
 
-function divide(a, b) {
-    // Issue 3: Division by zero
-    return a / b;
-}
-
-function displayUser(name) {
-    // Issue 4: Potential XSS vulnerability
-    document.getElementById("user").innerHTML = name;
-}
-
-function login(password) {
-    // Issue 5: Hardcoded password
-    console.log('password',password);
-    if (password === "admin123") {
-        return true;
+    if (!user) {
+        return null;
     }
-    return false;
+
+    return user.name;
 }
+
+console.log(getUser(null));
+
+module.exports = {
+    calculateAverage,
+    getUser,
+};
