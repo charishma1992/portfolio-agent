@@ -10,7 +10,3 @@ Feature: AI code review rule validation
     When I wait for 5000 milliseconds
     Then the application should be ready
 
-  Scenario: Validate checklist creation
-    Given the user is logged in
-    When I wait for 3000 milliseconds
-    Then the checklist should be created

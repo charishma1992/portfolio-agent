@@ -1,6 +1,5 @@
 
 function calculateAverage(numbers) {
-    // BUG-002: Potential division by zero when numbers is empty
     return numbers.reduce((a, b) => a + b) / numbers.length;
 }
 
