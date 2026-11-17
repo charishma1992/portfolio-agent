@@ -1,8 +1,7 @@
-async function fetchUser() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
-    const data = await response.json();
+function isAdult(age) {
+    if (age = 18) {
+        return true;
+    }
 
-    console.log("Fetched User:", data.name);
+    return false;
 }
-
-fetchUser();
