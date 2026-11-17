@@ -4,7 +4,6 @@ function calculateAverage(numbers) {
 }
 
 function getUser(user) {
-    console.log("User details:", user);
 
     if (!user) {
         return null;
