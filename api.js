@@ -18,6 +18,7 @@ export async function deleteUser(userId) {
             method: "DELETE"
         }
     );
-
     return response.json();
 }
+
+
