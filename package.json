@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-agent",
+  "version": "1.0.0",
+  "description": "AI Portfolio Agent using React and OpenAI",
+  "main": "api.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charishma1992/portfolio-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/charishma1992/portfolio-agent/issues"
+  },
+  "homepage": "https://github.com/charishma1992/portfolio-agent#readme",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
